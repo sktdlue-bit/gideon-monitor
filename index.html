@@ -547,7 +547,7 @@ function renderRow(s) {
     '<td class="mono">'+(s.strength!==null?s.strength.toFixed(1):'—')+'</td>'+
     '<td class="mono">'+(s.volume!==null?s.volume.toLocaleString():'—')+'</td>'+
     '<td class="mono">'+(s.tradingAmt?fmtAmt(s.tradingAmt):'—')+'</td>'+
-    '<td class="muted" style="font-size:11px">'+(s.baseDate?s.baseDate.slice(0,10).replace(/-/g,'.'):'—')+'</td>'+
+    '<td class="muted" style="font-size:11px">'+(s.baseDate?String(s.baseDate).slice(0,10).replace(/-/g,'.'):'—')+'</td>'+
     '<td><div class="row-btns">'+
     (s.status!=='done'?'<button class="rbtn done-btn" data-id="'+s.id+'">완료</button>':'')+
     '<button class="rbtn reset-btn" data-id="'+s.id+'">초기화</button>'+
